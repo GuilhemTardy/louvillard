@@ -1,0 +1,393 @@
+{
+  "slug": "gala-compagnie-etoile-2026",
+  "title": "Gala de danse — Compagnie Étoile",
+  "category": "spectacle",
+  "date": "2026-06-20",
+  "location": "Théâtre municipal, Grenoble",
+  "description": "Le gala de fin d'année de la Compagnie Étoile : six tableaux, quatre-vingts danseuses et danseurs. Filtrez par tableau pour retrouver votre enfant.",
+  "accessCodes": [
+    "ETOILE26"
+  ],
+  "listed": true,
+  "demo": true,
+  "search": "tags",
+  "pricing": {
+    "unit": 500,
+    "bundles": [
+      {
+        "quantity": 5,
+        "price": 2000
+      },
+      {
+        "quantity": 10,
+        "price": 3500
+      }
+    ],
+    "all": 6900
+  },
+  "coverId": "gal001",
+  "photos": [
+    {
+      "id": "gal001",
+      "filename": "LV_0001.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:00:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Ouverture"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal001/original.jpg"
+    },
+    {
+      "id": "gal002",
+      "filename": "LV_0002.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:06:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Ouverture"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal002/original.jpg"
+    },
+    {
+      "id": "gal003",
+      "filename": "LV_0003.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:12:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Ouverture"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal003/original.jpg"
+    },
+    {
+      "id": "gal004",
+      "filename": "LV_0004.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:18:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Ouverture"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal004/original.jpg"
+    },
+    {
+      "id": "gal005",
+      "filename": "LV_0005.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:24:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Ouverture"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal005/original.jpg"
+    },
+    {
+      "id": "gal006",
+      "filename": "LV_0006.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:30:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Classique"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal006/original.jpg"
+    },
+    {
+      "id": "gal007",
+      "filename": "LV_0007.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:36:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Classique"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal007/original.jpg"
+    },
+    {
+      "id": "gal008",
+      "filename": "LV_0008.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:42:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Classique"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal008/original.jpg"
+    },
+    {
+      "id": "gal009",
+      "filename": "LV_0009.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:48:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Classique"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal009/original.jpg"
+    },
+    {
+      "id": "gal010",
+      "filename": "LV_0010.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T18:54:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Classique"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal010/original.jpg"
+    },
+    {
+      "id": "gal011",
+      "filename": "LV_0011.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:00:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Jazz"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal011/original.jpg"
+    },
+    {
+      "id": "gal012",
+      "filename": "LV_0012.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:06:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Jazz"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal012/original.jpg"
+    },
+    {
+      "id": "gal013",
+      "filename": "LV_0013.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:12:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Jazz"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal013/original.jpg"
+    },
+    {
+      "id": "gal014",
+      "filename": "LV_0014.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:18:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Jazz"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal014/original.jpg"
+    },
+    {
+      "id": "gal015",
+      "filename": "LV_0015.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:24:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Jazz"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal015/original.jpg"
+    },
+    {
+      "id": "gal016",
+      "filename": "LV_0016.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:30:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Contemporain"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal016/original.jpg"
+    },
+    {
+      "id": "gal017",
+      "filename": "LV_0017.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:36:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Contemporain"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal017/original.jpg"
+    },
+    {
+      "id": "gal018",
+      "filename": "LV_0018.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:42:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Contemporain"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal018/original.jpg"
+    },
+    {
+      "id": "gal019",
+      "filename": "LV_0019.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:48:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Contemporain"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal019/original.jpg"
+    },
+    {
+      "id": "gal020",
+      "filename": "LV_0020.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T19:54:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Contemporain"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal020/original.jpg"
+    },
+    {
+      "id": "gal021",
+      "filename": "LV_0021.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:00:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Hip-hop"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal021/original.jpg"
+    },
+    {
+      "id": "gal022",
+      "filename": "LV_0022.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:06:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Hip-hop"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal022/original.jpg"
+    },
+    {
+      "id": "gal023",
+      "filename": "LV_0023.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:12:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Hip-hop"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal023/original.jpg"
+    },
+    {
+      "id": "gal024",
+      "filename": "LV_0024.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:18:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Hip-hop"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal024/original.jpg"
+    },
+    {
+      "id": "gal025",
+      "filename": "LV_0025.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:24:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Hip-hop"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal025/original.jpg"
+    },
+    {
+      "id": "gal026",
+      "filename": "LV_0026.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:30:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Final & saluts"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal026/original.jpg"
+    },
+    {
+      "id": "gal027",
+      "filename": "LV_0027.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:36:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Final & saluts"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal027/original.jpg"
+    },
+    {
+      "id": "gal028",
+      "filename": "LV_0028.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:42:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Final & saluts"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal028/original.jpg"
+    },
+    {
+      "id": "gal029",
+      "filename": "LV_0029.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:48:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Final & saluts"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal029/original.jpg"
+    },
+    {
+      "id": "gal030",
+      "filename": "LV_0030.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-06-20T20:54:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Final & saluts"
+      ],
+      "originalKey": "photos/gala-compagnie-etoile-2026/gal030/original.jpg"
+    }
+  ],
+  "createdAt": "2026-09-20T10:00:00.000Z",
+  "updatedAt": "2026-09-20T10:00:00.000Z"
+}

@@ -1,0 +1,245 @@
+{
+  "slug": "festival-nuits-de-juillet",
+  "title": "Festival Nuits de Juillet",
+  "category": "concert",
+  "date": "2026-07-18",
+  "location": "Lyon",
+  "description": "Deux scènes, une nuit d'été. Galerie réservée aux artistes et à l'organisation.",
+  "accessCodes": [
+    "NUITS26"
+  ],
+  "listed": true,
+  "demo": true,
+  "search": "tags",
+  "pricing": {
+    "unit": 800,
+    "bundles": [
+      {
+        "quantity": 5,
+        "price": 3000
+      }
+    ],
+    "all": 9000
+  },
+  "coverId": "fes001",
+  "photos": [
+    {
+      "id": "fes001",
+      "filename": "LV_0001.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:00:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Lune"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes001/original.jpg"
+    },
+    {
+      "id": "fes002",
+      "filename": "LV_0002.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:06:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Soleil"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes002/original.jpg"
+    },
+    {
+      "id": "fes003",
+      "filename": "LV_0003.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:12:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Public"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes003/original.jpg"
+    },
+    {
+      "id": "fes004",
+      "filename": "LV_0004.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:18:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Backstage"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes004/original.jpg"
+    },
+    {
+      "id": "fes005",
+      "filename": "LV_0005.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:24:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Lune"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes005/original.jpg"
+    },
+    {
+      "id": "fes006",
+      "filename": "LV_0006.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:30:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Soleil"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes006/original.jpg"
+    },
+    {
+      "id": "fes007",
+      "filename": "LV_0007.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:36:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Public"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes007/original.jpg"
+    },
+    {
+      "id": "fes008",
+      "filename": "LV_0008.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:42:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Backstage"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes008/original.jpg"
+    },
+    {
+      "id": "fes009",
+      "filename": "LV_0009.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:48:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Lune"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes009/original.jpg"
+    },
+    {
+      "id": "fes010",
+      "filename": "LV_0010.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T19:54:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Soleil"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes010/original.jpg"
+    },
+    {
+      "id": "fes011",
+      "filename": "LV_0011.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:00:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Public"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes011/original.jpg"
+    },
+    {
+      "id": "fes012",
+      "filename": "LV_0012.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:06:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Backstage"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes012/original.jpg"
+    },
+    {
+      "id": "fes013",
+      "filename": "LV_0013.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:12:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Lune"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes013/original.jpg"
+    },
+    {
+      "id": "fes014",
+      "filename": "LV_0014.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:18:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Soleil"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes014/original.jpg"
+    },
+    {
+      "id": "fes015",
+      "filename": "LV_0015.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:24:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Public"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes015/original.jpg"
+    },
+    {
+      "id": "fes016",
+      "filename": "LV_0016.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:30:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Backstage"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes016/original.jpg"
+    },
+    {
+      "id": "fes017",
+      "filename": "LV_0017.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:36:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Lune"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes017/original.jpg"
+    },
+    {
+      "id": "fes018",
+      "filename": "LV_0018.jpg",
+      "width": 1800,
+      "height": 1200,
+      "takenAt": "2026-07-18T20:42:00.000Z",
+      "bibs": [],
+      "tags": [
+        "Scène Soleil"
+      ],
+      "originalKey": "photos/festival-nuits-de-juillet/fes018/original.jpg"
+    }
+  ],
+  "createdAt": "2026-09-20T10:00:00.000Z",
+  "updatedAt": "2026-09-20T10:00:00.000Z"
+}
