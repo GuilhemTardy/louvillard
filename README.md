@@ -6,7 +6,7 @@ Site portfolio + **vente de photos par événement** (spectacles, galas, concert
 - **Galeries privées par code** : chaque événement est protégé par un code d'accès. Sans code, seule la couverture est visible.
 - **Retrouvez-vous** : recherche par **numéro de dossard** (trail) ou par **moment/tableau** (spectacle, concert).
 - **Panier & paiement** : prix unitaire, **lots dégressifs** et **galerie complète** — le meilleur prix est calculé automatiquement. Paiement **Stripe Checkout** (CB, Apple Pay, Google Pay, codes promo).
-- **Livraison immédiate** : page de téléchargement (photo par photo ou ZIP) valable 60 jours + e-mail automatique.
+- **Livraison immédiate** : page de téléchargement (photo par photo ou ZIP) valable 60 jours + e-mail automatique. Lien perdu : la page `/commande` renvoie les liens par e-mail.
 - **Protection** : les visiteurs ne voient que des aperçus réduits et **filigranés**, générés à l'import. Les originaux HD ne sont servis qu'après paiement vérifié.
 - **Espace admin** (`/admin`) : créer un événement, importer les photos par glisser-déposer, taguer, saisir les dossards à la chaîne, choisir la couverture, QR code à imprimer, suivi des ventes.
 
@@ -60,6 +60,15 @@ Quand les vraies galeries sont en ligne : `SHOW_DEMO_EVENTS=false`.
 ⚠️ À compléter avant d'ouvrir les ventes : SIRET et adresse (`site.legal`), vraie adresse e-mail, vraies photos du portfolio.
 
 Les images de démonstration (portfolio et galeries) sont générées par `npm run demo:generate`.
+
+## Vérifications
+
+```bash
+npm run lint && npm run typecheck && npm test && npm run build
+```
+
+Les mêmes vérifications tournent automatiquement sur GitHub à chaque push (`.github/workflows/ci.yml`).
+La fréquentation est mesurée par Vercel Web Analytics et Speed Insights (à activer dans l'onglet *Analytics* du projet Vercel, sans cookie).
 
 ## Architecture
 

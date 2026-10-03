@@ -51,7 +51,7 @@ export const site = {
     },
     {
       q: "Combien de temps puis-je télécharger mes photos ?",
-      a: "Le lien de téléchargement reste actif 60 jours. Pensez à enregistrer vos fichiers ; il est aussi envoyé par e-mail.",
+      a: "Le lien de téléchargement reste actif 60 jours. Pensez à enregistrer vos fichiers ; il est aussi envoyé par e-mail. Lien perdu ? La page « Retrouver ma commande » vous le renvoie.",
     },
     {
       q: "Puis-je publier les photos sur les réseaux ?",

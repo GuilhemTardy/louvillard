@@ -34,7 +34,8 @@ export default function LegalPage() {
         <h2>Cookies</h2>
         <p>
           Le site utilise uniquement des cookies techniques : mémorisation des galeries déverrouillées et de votre
-          sélection. Aucun cookie publicitaire ni de mesure d&apos;audience tierce.
+          sélection. La fréquentation est mesurée de façon anonyme et sans cookie (Vercel Web Analytics). Aucun cookie
+          publicitaire.
         </p>
       </div>
     </article>

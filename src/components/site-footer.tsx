@@ -32,6 +32,7 @@ export function SiteFooter() {
           <p className="eyebrow mb-4">Vos photos</p>
           <ul className="space-y-2.5 text-sm">
             <li><Link className="text-muted hover:text-fg" href="/acces">Accéder avec un code</Link></li>
+            <li><Link className="text-muted hover:text-fg" href="/commande">Retrouver ma commande</Link></li>
             <li><Link className="text-muted hover:text-fg" href="/a-propos#faq">Questions fréquentes</Link></li>
             <li><Link className="text-muted hover:text-fg" href="/cgv">Conditions de vente</Link></li>
             <li><Link className="text-muted hover:text-fg" href="/mentions-legales">Mentions légales</Link></li>

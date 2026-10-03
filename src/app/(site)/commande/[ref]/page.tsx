@@ -15,7 +15,7 @@ export default async function OrderPage({ params }: PageProps<"/commande/[ref]">
   if (!order || (order.paid && !expired && !event)) {
     return (
       <Message title="Commande introuvable">
-        Ce lien n&apos;est pas valide. Si vous avez payé, utilisez le lien reçu par e-mail ou écrivez à{" "}
+        Ce lien n&apos;est pas valide. Si vous avez payé, <Link className="text-fg underline" href="/commande">recevez à nouveau vos liens</Link> ou écrivez à{" "}
         <a className="text-fg underline" href={`mailto:${site.email}`}>{site.email}</a>.
       </Message>
     );

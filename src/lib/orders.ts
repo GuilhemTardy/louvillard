@@ -163,6 +163,15 @@ export async function resolveOrder(ref: string) {
   return { order, expired, event, photos };
 }
 
+/** Commandes payées et encore valides pour une adresse e-mail. */
+export async function findOrdersByEmail(email: string): Promise<Order[]> {
+  if (!stripeEnabled) return [];
+  const sessions = await stripe().checkout.sessions.list({ limit: 50, status: "complete", customer_details: { email } });
+  return sessions.data
+    .map(fromSession)
+    .filter((o): o is Order => Boolean(o?.paid && o.expiresAt > Date.now()));
+}
+
 export async function listPaidOrders(limit = 100): Promise<Order[]> {
   if (!stripeEnabled) return [];
   const sessions = await stripe().checkout.sessions.list({ limit: Math.min(limit, 100), status: "complete" });
