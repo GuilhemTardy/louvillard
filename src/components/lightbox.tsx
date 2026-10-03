@@ -81,8 +81,6 @@ export function Lightbox({ items, index, onIndexChange, caption, actions }: Prop
           key={item.src}
           src={item.src}
           alt={item.alt}
-          width={item.width}
-          height={item.height}
           className="max-h-full max-w-full object-contain animate-[fade-up_0.35s_ease-out]"
           draggable={false}
         />

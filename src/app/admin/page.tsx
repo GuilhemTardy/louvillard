@@ -51,7 +51,7 @@ export default async function AdminHome() {
         </div>
       )}
 
-      <ul className="mt-8 divide-y divide-line overflow-hidden rounded-2xl border border-line">
+      <ul className="mt-8 divide-y divide-line overflow-hidden rounded-[3px] border border-line">
         {events.map((e) => {
           const pub = toPublicEvent(e);
           const cover = coverUrl(pub);

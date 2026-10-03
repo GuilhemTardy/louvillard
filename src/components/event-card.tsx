@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CATEGORY_LABELS, type PublicEvent } from "@/lib/types";
 import { IconCalendar, IconImage, IconLock, IconPin } from "./icons";
+import { SafeImg } from "./safe-img";
 
 export function formatDate(date: string, opts: Intl.DateTimeFormatOptions = { day: "numeric", month: "long", year: "numeric" }) {
   return new Intl.DateTimeFormat("fr-FR", { ...opts, timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`));
@@ -14,10 +15,9 @@ export function EventCard({ event, unlocked }: { event: PublicEvent; unlocked?: 
   const cover = coverUrl(event);
   return (
     <Link href={`/evenements/${event.slug}`} className="group block">
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-soft">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-[3px] bg-soft">
         {cover && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <SafeImg
             src={cover}
             alt=""
             loading="lazy"

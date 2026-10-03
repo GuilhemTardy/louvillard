@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { IconArrowRight } from "@/components/icons";
-import { portfolio } from "@/content/portfolio";
+import { Photo } from "@/components/photo";
+import { ClipReveal, FadeUp, Line } from "@/components/reveal";
+import { portrait } from "@/content/portfolio";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -10,76 +10,89 @@ export const metadata: Metadata = {
   description: `${site.name}, photographe de spectacles, concerts et trails. Prestations, déroulé et questions fréquentes.`,
 };
 
+const PROCESS = [
+  ["Avant", "Un échange pour comprendre l'événement, le lieu, les moments clés, et fixer le code d'accès."],
+  ["Pendant", "Une présence discrète, sans flash en salle, plusieurs postes sur les parcours de trail."],
+  ["Après", "Tri, retouche, mise en ligne sous quelques jours. Vos participants achètent en autonomie."],
+] as const;
+
 export default function AboutPage() {
-  const portrait = portfolio.find((p) => p.height > p.width) ?? portfolio[0];
   return (
     <>
-      <section className="container-page pb-20 pt-32 sm:pt-40">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-soft lg:sticky lg:top-28 lg:self-start">
-            <Image src={portrait.src} alt={`Portrait de ${site.name}`} fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
-          </div>
-          <div>
-            <p className="eyebrow">À propos</p>
-            <h1 className="mt-3 font-display text-5xl leading-[0.95] sm:text-7xl">
-              Bonjour, je suis <span className="italic text-accent">Lou</span>.
-            </h1>
-            <div className="prose-lv mt-10 text-lg">
-              {site.about.map((p) => (
-                <p key={p.slice(0, 20)}>{p}</p>
-              ))}
-            </div>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/contact" className="btn btn-primary">Me contacter <IconArrowRight size={16} /></Link>
-              <Link href="/portfolio" className="btn btn-ghost">Portfolio</Link>
+      <section className="px-5 pb-28 pt-36 md:px-10 md:pt-44">
+        <p className="mono text-muted">À propos</p>
+        <h1 className="display mt-5 text-[clamp(4rem,13vw,12rem)]">
+          <Line>Bonjour,</Line>
+          <Line delay={0.1}>c&apos;est Lou.</Line>
+        </h1>
+        <div className="mt-20 grid gap-12 md:grid-cols-12 md:gap-8">
+          <ClipReveal className="md:col-span-5">
+            <Photo image={portrait} className="aspect-[4/5] w-full" sizes="(min-width:768px) 40vw, 100vw" w={1400} priority />
+          </ClipReveal>
+          <div className="md:col-span-6 md:col-start-7">
+            {site.about.map((p, i) => (
+              <FadeUp key={p.slice(0, 24)} delay={i * 0.05}>
+                <p className={`max-w-xl leading-[1.7] ${i === 0 ? "text-[22px] text-fg" : "mt-6 text-[17px] text-muted"}`}>{p}</p>
+              </FadeUp>
+            ))}
+            <div className="mt-12 flex flex-wrap gap-3">
+              <Link href="/contact" className="rounded-full bg-fg px-6 py-3 text-[14px] font-medium text-bg hover:bg-black">
+                Me contacter →
+              </Link>
+              <Link href="/portfolio" className="rounded-full border border-fg/20 px-6 py-3 text-[14px] hover:border-fg">
+                Portfolio
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="prestations" className="scroll-mt-24 border-y border-line bg-elevated py-24">
-        <div className="container-page">
-          <p className="eyebrow">Prestations</p>
-          <h2 className="mt-3 max-w-2xl font-display text-4xl leading-tight sm:text-5xl">
-            Couverture photo, galerie privée, vente en ligne : tout est inclus
-          </h2>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
-            {site.services.map((s) => (
-              <div key={s.title} className="bg-elevated p-8">
-                <p className="font-display text-3xl">{s.title}</p>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{s.text}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
-            {[
-              ["Avant", "Un échange pour comprendre l'événement, le lieu, les moments clés, et fixer le code d'accès."],
-              ["Pendant", "Une présence discrète, sans flash en salle, plusieurs postes sur les parcours de trail."],
-              ["Après", "Tri, retouche, mise en ligne sous quelques jours. Vos participants achètent en autonomie."],
-            ].map(([t, d]) => (
-              <div key={t}>
-                <p className="font-display text-2xl italic text-accent">{t}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{d}</p>
-              </div>
-            ))}
-          </div>
+      <section id="prestations" className="scroll-mt-24 bg-accent px-5 py-28 text-accent-ink md:px-10 md:py-36">
+        <p className="mono text-white/50">Prestations</p>
+        <h2 className="display mt-5 max-w-5xl text-[clamp(3rem,7vw,6.5rem)]">
+          <Line inView>Couverture, galerie</Line>
+          <Line inView delay={0.1}>privée, vente en ligne.</Line>
+        </h2>
+        <div className="mt-16 grid border-t border-white/15 md:grid-cols-2">
+          {site.services.map((s, i) => (
+            <FadeUp
+              key={s.title}
+              delay={(i % 2) * 0.08}
+              className={`border-b border-white/15 py-10 ${i % 2 ? "md:border-l md:pl-10" : "md:pr-10"}`}
+            >
+              <p className="mono text-white/50">{String(i + 1).padStart(2, "0")}</p>
+              <p className="display mt-3 text-[clamp(2rem,3.4vw,3rem)]">{s.title}</p>
+              <p className="mt-4 max-w-md text-[15px] leading-relaxed text-white/65">{s.text}</p>
+            </FadeUp>
+          ))}
+        </div>
+        <div className="mt-16 grid gap-10 md:grid-cols-3">
+          {PROCESS.map(([t, d]) => (
+            <FadeUp key={t}>
+              <p className="mono text-white">{t}</p>
+              <p className="mt-3 text-[15px] leading-relaxed text-white/65">{d}</p>
+            </FadeUp>
+          ))}
         </div>
       </section>
 
-      <section id="faq" className="container-page scroll-mt-24 py-24">
-        <div className="grid gap-12 lg:grid-cols-[1fr_2fr]">
-          <div>
-            <p className="eyebrow">Questions fréquentes</p>
-            <h2 className="mt-3 font-display text-4xl sm:text-5xl">Bon à savoir</h2>
+      <section id="faq" className="scroll-mt-24 px-5 py-28 md:px-10 md:py-36">
+        <div className="grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="mono text-muted">Questions fréquentes</p>
+            <h2 className="display mt-5 text-[clamp(3rem,6vw,5.5rem)]">
+              <Line inView>Bon à</Line>
+              <Line inView delay={0.1}>savoir</Line>
+            </h2>
           </div>
-          <div className="divide-y divide-line border-y border-line">
+          <div className="divide-y divide-fg/15 border-y border-fg/15 md:col-span-7 md:col-start-6">
             {site.faq.map((item) => (
-              <details key={item.q} className="group py-5">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg">
+              <details key={item.q} className="group py-6">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-[18px]">
                   {item.q}
-                  <span className="text-2xl text-muted transition-transform group-open:rotate-45">+</span>
+                  <span className="mono text-muted transition-transform group-open:rotate-45">+</span>
                 </summary>
-                <p className="mt-3 max-w-2xl leading-relaxed text-muted">{item.a}</p>
+                <p className="mt-4 max-w-2xl leading-relaxed text-muted">{item.a}</p>
               </details>
             ))}
           </div>

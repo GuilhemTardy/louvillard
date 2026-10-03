@@ -52,14 +52,14 @@ Quand les vraies galeries sont en ligne : `SHOW_DEMO_EVENTS=false`.
 | Quoi | Où |
 | --- | --- |
 | Textes, e-mail, Instagram, FAQ, prestations, mentions légales | `src/content/site.ts` |
-| Images du portfolio | `public/portfolio/` + légendes dans `src/content/portfolio.json` |
+| Photos du portfolio et de la bannière | `src/content/portfolio.ts` (identifiant Unsplash ou fichier dans `public/`) |
 | Couleurs, typographies | `src/app/globals.css`, `src/app/layout.tsx` |
 | Filigrane | `assets/watermark.png` (motif répété sur les aperçus) |
 | Durée de validité des téléchargements | `DOWNLOAD_DAYS` dans `src/lib/orders.ts` |
 
 ⚠️ À compléter avant d'ouvrir les ventes : SIRET et adresse (`site.legal`), vraie adresse e-mail, vraies photos du portfolio.
 
-Les images de démonstration (portfolio et galeries) sont générées par `npm run demo:generate`.
+Les photos du portfolio et des galeries de démonstration viennent d’Unsplash (identifiants dans `src/content/portfolio.ts` et `seed/events/`). À remplacer par les photos de Lou.
 
 ## Vérifications
 

@@ -1,47 +1,48 @@
 import Link from "next/link";
 import { site } from "@/content/site";
-import { IconInstagram, IconMail } from "./icons";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-auto border-t border-line">
-      <div className="container-page grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
-        <div>
-          <p className="font-display text-3xl">{site.name}</p>
-          <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted">{site.tagline}. {site.city}.</p>
-          <div className="mt-6 flex gap-3">
-            <a href={`mailto:${site.email}`} className="btn btn-ghost btn-sm" aria-label="E-mail">
-              <IconMail size={16} /> {site.email}
-            </a>
-            <a href={site.instagram} className="btn btn-ghost btn-sm" aria-label="Instagram" target="_blank" rel="noreferrer">
-              <IconInstagram size={16} />
-            </a>
-          </div>
-        </div>
-        <div>
-          <p className="eyebrow mb-4">Explorer</p>
-          <ul className="space-y-2.5 text-sm">
-            <li><Link className="text-muted hover:text-fg" href="/portfolio">Portfolio</Link></li>
-            <li><Link className="text-muted hover:text-fg" href="/evenements">Événements</Link></li>
-            <li><Link className="text-muted hover:text-fg" href="/a-propos">À propos & prestations</Link></li>
-            <li><Link className="text-muted hover:text-fg" href="/contact">Contact & devis</Link></li>
-          </ul>
-        </div>
-        <div>
-          <p className="eyebrow mb-4">Vos photos</p>
-          <ul className="space-y-2.5 text-sm">
-            <li><Link className="text-muted hover:text-fg" href="/acces">Accéder avec un code</Link></li>
-            <li><Link className="text-muted hover:text-fg" href="/commande">Retrouver ma commande</Link></li>
-            <li><Link className="text-muted hover:text-fg" href="/a-propos#faq">Questions fréquentes</Link></li>
-            <li><Link className="text-muted hover:text-fg" href="/cgv">Conditions de vente</Link></li>
-            <li><Link className="text-muted hover:text-fg" href="/mentions-legales">Mentions légales</Link></li>
-          </ul>
-        </div>
+    <footer id="contact" className="relative mt-auto overflow-hidden bg-accent px-5 pb-8 pt-28 text-accent-ink md:px-10 md:pt-40">
+      <p className="mono text-white/50">Contact</p>
+      <a href={`mailto:${site.email}`} className="group mt-6 block">
+        <span className="display block text-[clamp(3.6rem,13vw,13rem)]">
+          On en parle <span className="inline-block transition-transform duration-500 group-hover:translate-x-4">→</span>
+        </span>
+        <span className="link-u mt-4 inline-block pb-1 text-[clamp(1.1rem,2.4vw,1.8rem)] text-white/70 group-hover:text-white">
+          {site.email}
+        </span>
+      </a>
+
+      <div className="mt-16 flex flex-wrap gap-3">
+        <a
+          href={site.instagram}
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-full border border-white/25 px-5 py-2.5 text-[13px] transition-colors hover:bg-white hover:text-black"
+        >
+          Instagram
+        </a>
+        <Link href="/contact" className="rounded-full border border-white/25 px-5 py-2.5 text-[13px] transition-colors hover:bg-white hover:text-black">
+          Demander un devis
+        </Link>
+        <Link href="/acces" className="rounded-full bg-white px-5 py-2.5 text-[13px] font-medium text-black transition-colors hover:bg-white/85">
+          Accéder à mes photos
+        </Link>
       </div>
-      <div className="container-page flex flex-col gap-2 border-t border-line py-6 text-xs text-faint sm:flex-row sm:justify-between">
-        <p>© {year} {site.name}. Toutes les photographies sont protégées par le droit d&apos;auteur.</p>
-        <p>Paiement sécurisé par Stripe</p>
+
+      <div className="mono mt-24 grid gap-6 border-t border-white/15 pt-6 text-white/50 md:grid-cols-4">
+        <p>© {year} {site.name}</p>
+        <p>{site.city}</p>
+        <nav className="flex flex-wrap gap-x-5 gap-y-2" aria-label="Liens utiles">
+          <Link className="hover:text-white" href="/commande">Retrouver ma commande</Link>
+          <Link className="hover:text-white" href="/a-propos#faq">FAQ</Link>
+        </nav>
+        <nav className="flex flex-wrap gap-x-5 gap-y-2 md:justify-end" aria-label="Informations légales">
+          <Link className="hover:text-white" href="/cgv">CGV</Link>
+          <Link className="hover:text-white" href="/mentions-legales">Mentions légales</Link>
+        </nav>
       </div>
     </footer>
   );

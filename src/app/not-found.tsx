@@ -6,7 +6,7 @@ import NotFoundContent from "./(site)/not-found";
 export default function NotFound() {
   return (
     <>
-      <SiteHeader name={site.name} />
+      <SiteHeader name={site.name} meta={site.meta} />
       <main className="flex-1">
         <NotFoundContent />
       </main>

@@ -1,7 +1,7 @@
 import { type NextRequest } from "next/server";
 import sharp from "sharp";
 import { resolveOrder } from "@/lib/orders";
-import { openFile, readBuffer } from "@/lib/storage";
+import { extOf, openFile, readBuffer } from "@/lib/storage";
 
 /** Téléchargement d'un original HD acheté (ou de sa miniature avec ?preview=1). */
 export async function GET(req: NextRequest, ctx: RouteContext<"/api/orders/[ref]/photos/[id]">) {
@@ -27,7 +27,7 @@ export async function GET(req: NextRequest, ctx: RouteContext<"/api/orders/[ref]
   const file = await openFile(photo.originalKey);
   if (!file) return new Response("Fichier introuvable.", { status: 404 });
 
-  const ext = photo.originalKey.split(".").pop() ?? "jpg";
+  const ext = extOf(photo.originalKey);
   const filename = `lou-villard-${event.slug}-${photo.id}.${ext}`;
   return new Response(file.stream, {
     headers: {

@@ -41,7 +41,7 @@ export default async function OrderPage({ params }: PageProps<"/commande/[ref]">
   return (
     <div className="container-page pb-24 pt-32 sm:pt-40">
       {order.demo && (
-        <p className="mb-8 rounded-xl border border-accent/40 bg-accent/10 px-4 py-3 text-sm text-accent">
+        <p className="mb-8 rounded-[3px] border border-accent/40 bg-accent/10 px-4 py-3 text-sm text-accent">
           Commande de démonstration : aucun paiement n&apos;a été effectué.
         </p>
       )}
@@ -69,7 +69,7 @@ export default async function OrderPage({ params }: PageProps<"/commande/[ref]">
 
       <ul className="mt-14 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {photos.map((p) => (
-          <li key={p.id} className="overflow-hidden rounded-xl border border-line bg-elevated">
+          <li key={p.id} className="overflow-hidden rounded-[3px] border border-line bg-elevated">
             <div className="aspect-[3/2] bg-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={`${base}/photos/${p.id}?preview=1`} alt={`Photo ${p.id}`} loading="lazy" className="h-full w-full object-cover" />

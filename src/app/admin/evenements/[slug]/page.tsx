@@ -29,7 +29,7 @@ export default async function AdminEventPage({ params }: PageProps<"/admin/evene
           <Link href={`/evenements/${event.slug}`} target="_blank" className="btn btn-ghost btn-sm">Voir la galerie ↗</Link>
         </div>
         {event.demo && (
-          <p className="mt-4 rounded-xl border border-accent/40 bg-accent/10 px-4 py-3 text-sm text-accent">
+          <p className="mt-4 rounded-[3px] border border-accent/40 bg-accent/10 px-4 py-3 text-sm text-accent">
             Événement de démonstration (paiement simulé). Masquez les démos avec SHOW_DEMO_EVENTS=false.
           </p>
         )}

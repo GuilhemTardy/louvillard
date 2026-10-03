@@ -1,7 +1,7 @@
 import { PassThrough, Readable } from "node:stream";
 import archiver from "archiver";
 import { resolveOrder } from "@/lib/orders";
-import { openFile } from "@/lib/storage";
+import { extOf, openFile } from "@/lib/storage";
 
 export const maxDuration = 300;
 
@@ -20,7 +20,7 @@ export async function GET(_req: Request, ctx: RouteContext<"/api/orders/[ref]/zi
     for (const photo of photos) {
       const file = await openFile(photo.originalKey);
       if (!file) continue;
-      const ext = photo.originalKey.split(".").pop() ?? "jpg";
+      const ext = extOf(photo.originalKey);
       const entry = Readable.fromWeb(file.stream as import("node:stream/web").ReadableStream);
       archive.append(entry, { name: `lou-villard-${event.slug}-${photo.id}.${ext}` });
       // Un fichier à la fois pour limiter la mémoire.

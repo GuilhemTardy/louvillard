@@ -66,6 +66,12 @@ export async function processPhoto(input: Buffer): Promise<ProcessedPhoto> {
   return { width, height, takenAt, thumb, large };
 }
 
+/** Aperçu filigrané d'une seule taille (photos de démonstration distantes). */
+export async function watermarkVariant(input: Buffer, variant: Variant) {
+  const { width, quality } = VARIANTS[variant];
+  return watermarked(sharp(input, { failOn: "none" }).rotate(), width, quality);
+}
+
 /** Dossards détectés dans un nom de fichier : « D123 », « #123 », « dossard-123 ». */
 export function bibsFromFilename(filename: string): string[] {
   const base = filename.replace(/\.[a-z0-9]+$/i, "");

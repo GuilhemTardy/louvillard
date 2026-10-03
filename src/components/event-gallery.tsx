@@ -7,6 +7,7 @@ import { formatPrice, quote } from "@/lib/pricing";
 import type { GalleryEvent, PublicPhoto } from "@/lib/types";
 import { IconBag, IconCheck, IconClose, IconPlus, IconSearch, IconTrash } from "./icons";
 import { Lightbox } from "./lightbox";
+import { SafeImg } from "./safe-img";
 
 const PAGE = 60;
 const ROW_HEIGHT = 220;
@@ -217,8 +218,7 @@ export function EventGallery({ event, paymentReady }: { event: GalleryEvent; pay
               >
                 <div style={{ paddingBottom: `${100 / ratio}%` }} />
                 <button type="button" className="absolute inset-0" onClick={() => setLightbox(i)} aria-label={`Agrandir la photo ${photo.id}`}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <SafeImg
                     src={thumb(event.slug, photo.id)}
                     alt=""
                     loading="lazy"
@@ -284,7 +284,7 @@ export function EventGallery({ event, paymentReady }: { event: GalleryEvent; pay
       {/* Barre panier */}
       {cart.length > 0 && !drawer && (
         <div className="fixed inset-x-0 bottom-0 z-40 p-3 sm:p-5">
-          <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 rounded-2xl border border-line-strong bg-elevated/95 p-3 pl-5 shadow-2xl backdrop-blur-md animate-fade-up">
+          <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 rounded-[3px] border border-line-strong bg-elevated/95 p-3 pl-5 shadow-2xl backdrop-blur-md animate-fade-up">
             <div className="min-w-0">
               <p className="font-medium">
                 {cart.length} photo{cart.length > 1 ? "s" : ""} · {formatPrice(q.total)}
@@ -393,8 +393,7 @@ function CartDrawer({
               <ul className="grid grid-cols-4 gap-2">
                 {cart.map((id) => (
                   <li key={id} className="group relative aspect-square overflow-hidden rounded-md bg-soft">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={thumb(event.slug, id)} alt={`Photo ${id}`} className="h-full w-full object-cover" draggable={false} />
+                    <SafeImg src={thumb(event.slug, id)} alt={`Photo ${id}`} className="h-full w-full object-cover" draggable={false} />
                     <button
                       type="button"
                       onClick={() => onRemove(id)}
@@ -412,7 +411,7 @@ function CartDrawer({
             </>
           )}
 
-          <div className="mt-8 space-y-3 rounded-xl border border-line p-4 text-sm">
+          <div className="mt-8 space-y-3 rounded-[3px] border border-line p-4 text-sm">
             <p className="eyebrow">Tarifs</p>
             <p className="flex justify-between"><span className="text-muted">À l&apos;unité</span><span>{formatPrice(event.pricing.unit)}</span></p>
             {event.pricing.bundles.map((b) => (

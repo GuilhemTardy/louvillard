@@ -8,7 +8,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       <a href="#contenu" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 btn btn-primary">
         Aller au contenu
       </a>
-      <SiteHeader name={site.name} />
+      <SiteHeader name={site.name} meta={site.meta} />
       <main id="contenu" className="flex-1">
         {children}
       </main>

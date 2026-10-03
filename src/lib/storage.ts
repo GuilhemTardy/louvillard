@@ -59,7 +59,24 @@ async function openLocal(file: string, key: string): Promise<StoredFile | null> 
 }
 
 /** Ouvre un fichier en flux (pour le servir sans le charger en mémoire). */
+/** Photos de démonstration hébergées en ligne (Unsplash). */
+const REMOTE_RE = /^https:\/\/images\.unsplash\.com\//;
+
+export const isRemoteKey = (key: string) => REMOTE_RE.test(key);
+
+async function openRemote(url: string): Promise<StoredFile | null> {
+  const res = await fetch(url, { cache: "force-cache" }).catch(() => null);
+  if (!res?.ok || !res.body) return null;
+  const size = Number(res.headers.get("content-length"));
+  return {
+    stream: res.body,
+    size: Number.isFinite(size) && size > 0 ? size : null,
+    contentType: res.headers.get("content-type") ?? "image/jpeg",
+  };
+}
+
 export async function openFile(key: string): Promise<StoredFile | null> {
+  if (isRemoteKey(key)) return openRemote(key);
   safeKey(key);
   if (usingBlob) {
     const result = await get(key, { access: "private" }).catch(() => null);
@@ -166,3 +183,6 @@ export async function listJsonKeys(prefix: string): Promise<{ key: string; seed:
 
 /** En production sans Blob, le système de fichiers est en lecture seule. */
 export const storageWritable = usingBlob || process.env.VERCEL !== "1";
+
+/** Extension du fichier original (jpg pour les photos distantes). */
+export const extOf = (key: string) => (isRemoteKey(key) ? "jpg" : (key.split(".").pop() ?? "jpg").toLowerCase());

@@ -26,218 +26,194 @@
     {
       "id": "fes001",
       "filename": "LV_0001.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:00:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:00:00Z",
       "bibs": [],
       "tags": [
         "Scène Lune"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes001/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes002",
       "filename": "LV_0002.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:06:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:06:00Z",
       "bibs": [],
       "tags": [
         "Scène Soleil"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes002/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes003",
       "filename": "LV_0003.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:12:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:12:00Z",
       "bibs": [],
       "tags": [
         "Public"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes003/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes004",
       "filename": "LV_0004.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:18:00.000Z",
+      "width": 1600,
+      "height": 2400,
+      "takenAt": "2026-07-18T19:18:00Z",
       "bibs": [],
       "tags": [
         "Backstage"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes004/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1600&h=2400&q=85"
     },
     {
       "id": "fes005",
       "filename": "LV_0005.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:24:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:24:00Z",
       "bibs": [],
       "tags": [
         "Scène Lune"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes005/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes006",
       "filename": "LV_0006.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:30:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:30:00Z",
       "bibs": [],
       "tags": [
         "Scène Soleil"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes006/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes007",
       "filename": "LV_0007.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:36:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:36:00Z",
       "bibs": [],
       "tags": [
         "Public"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes007/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes008",
       "filename": "LV_0008.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:42:00.000Z",
+      "width": 1600,
+      "height": 2400,
+      "takenAt": "2026-07-18T19:42:00Z",
       "bibs": [],
       "tags": [
         "Backstage"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes008/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&h=2400&q=85"
     },
     {
       "id": "fes009",
       "filename": "LV_0009.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:48:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:48:00Z",
       "bibs": [],
       "tags": [
         "Scène Lune"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes009/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes010",
       "filename": "LV_0010.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T19:54:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T19:54:00Z",
       "bibs": [],
       "tags": [
         "Scène Soleil"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes010/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes011",
       "filename": "LV_0011.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:00:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T20:00:00Z",
       "bibs": [],
       "tags": [
         "Public"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes011/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes012",
       "filename": "LV_0012.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:06:00.000Z",
+      "width": 1600,
+      "height": 2400,
+      "takenAt": "2026-07-18T20:06:00Z",
       "bibs": [],
       "tags": [
         "Backstage"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes012/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1600&h=2400&q=85"
     },
     {
       "id": "fes013",
       "filename": "LV_0013.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:12:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T20:12:00Z",
       "bibs": [],
       "tags": [
         "Scène Lune"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes013/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes014",
       "filename": "LV_0014.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:18:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T20:18:00Z",
       "bibs": [],
       "tags": [
         "Scène Soleil"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes014/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes015",
       "filename": "LV_0015.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:24:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-07-18T20:24:00Z",
       "bibs": [],
       "tags": [
         "Public"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes015/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "fes016",
       "filename": "LV_0016.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:30:00.000Z",
+      "width": 1600,
+      "height": 2400,
+      "takenAt": "2026-07-18T20:30:00Z",
       "bibs": [],
       "tags": [
         "Backstage"
       ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes016/original.jpg"
-    },
-    {
-      "id": "fes017",
-      "filename": "LV_0017.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:36:00.000Z",
-      "bibs": [],
-      "tags": [
-        "Scène Lune"
-      ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes017/original.jpg"
-    },
-    {
-      "id": "fes018",
-      "filename": "LV_0018.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-07-18T20:42:00.000Z",
-      "bibs": [],
-      "tags": [
-        "Scène Soleil"
-      ],
-      "originalKey": "photos/festival-nuits-de-juillet/fes018/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&h=2400&q=85"
     }
   ],
   "createdAt": "2026-09-20T10:00:00.000Z",

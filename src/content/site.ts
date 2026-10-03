@@ -10,6 +10,10 @@ export const site = {
   city: "Grenoble & partout en France",
   instagram: "https://www.instagram.com/",
   instagramHandle: "@louvillard.photo",
+  meta: "Grenoble · 45°11′N 5°43′E",
+  kicker: "Photographe spectacle, scène et trail",
+  disciplines: ["Spectacle", "Danse", "Concert", "Trail"],
+  marquee: ["Spectacle", "Danse", "Théâtre", "Concert", "Galas", "Festivals", "Trail", "Courses nature"],
   intro:
     "Je photographie ce qui ne se rejoue pas : le saut au bon moment, la lumière qui tombe juste, le visage à l'arrivée d'un trail. Spectacles, galas, concerts et courses nature.",
   about: [

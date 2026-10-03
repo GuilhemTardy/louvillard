@@ -24,7 +24,7 @@ export default function AccessPage() {
         <ol className="mt-10 grid gap-6 sm:grid-cols-3">
           {site.steps.map((s, i) => (
             <li key={s.title}>
-              <span className="font-display text-3xl italic text-accent">0{i + 1}</span>
+              <span className="display text-4xl">0{i + 1}</span>
               <p className="mt-2 text-sm font-medium">{s.title}</p>
               <p className="mt-1 text-xs leading-relaxed text-muted">{s.text}</p>
             </li>

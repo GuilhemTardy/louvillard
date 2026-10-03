@@ -32,7 +32,7 @@ export default async function OrdersPage() {
       </div>
 
       <h2 className="mt-12 font-display text-3xl">Par événement</h2>
-      <ul className="mt-4 divide-y divide-line rounded-2xl border border-line">
+      <ul className="mt-4 divide-y divide-line rounded-[3px] border border-line">
         {[...byEvent].map(([slug, s]) => (
           <li key={slug} className="flex justify-between gap-4 p-4 text-sm">
             <span>{titles.get(slug) ?? slug}</span>
@@ -42,7 +42,7 @@ export default async function OrdersPage() {
       </ul>
 
       <h2 className="mt-12 font-display text-3xl">Dernières commandes</h2>
-      <div className="mt-4 overflow-x-auto rounded-2xl border border-line">
+      <div className="mt-4 overflow-x-auto rounded-[3px] border border-line">
         <table className="w-full text-left text-sm">
           <thead className="bg-elevated text-xs uppercase tracking-wider text-faint">
             <tr><th className="p-3">Date</th><th className="p-3">Client</th><th className="p-3">Événement</th><th className="p-3">Photos</th><th className="p-3 text-right">Montant</th><th className="p-3" /></tr>

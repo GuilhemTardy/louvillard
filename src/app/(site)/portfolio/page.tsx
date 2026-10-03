@@ -1,25 +1,29 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { PortfolioGrid } from "@/components/portfolio-grid";
-import { portfolio } from "@/content/portfolio";
+import { Line } from "@/components/reveal";
+import { series } from "@/content/portfolio";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Spectacles, concerts et trails : une sélection d'images de Lou Villard.",
+  description: "Spectacles, concerts et trails : une sélection de séries de Lou Villard.",
 };
 
 export default function PortfolioPage() {
   return (
-    <div className="container-page pb-24 pt-32 sm:pt-40">
-      <p className="eyebrow">Portfolio</p>
-      <h1 className="mt-3 font-display text-5xl leading-none sm:text-7xl">Instants choisis</h1>
-      <p className="mt-6 max-w-2xl leading-relaxed text-muted">
+    <div className="px-5 pb-28 pt-36 md:px-10 md:pt-44">
+      <p className="mono text-muted">Portfolio</p>
+      <h1 className="display mt-5 text-[clamp(4rem,13vw,12rem)]">
+        <Line>Instants</Line>
+        <Line delay={0.1}>choisis</Line>
+      </h1>
+      <p className="mt-8 max-w-xl text-[17px] leading-[1.7] text-muted">
         Scènes de danse et de théâtre, concerts, sentiers au lever du jour. Une sélection personnelle, mise à jour au fil
         de la saison.
       </p>
-      <div className="mt-12">
+      <div className="mt-14">
         <Suspense>
-          <PortfolioGrid items={portfolio} />
+          <PortfolioGrid series={series} />
         </Suspense>
       </div>
     </div>

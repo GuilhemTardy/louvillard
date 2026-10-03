@@ -221,7 +221,7 @@ export function PhotoManager({ slug, photos, coverId, blob, search }: Props) {
       </div>
 
       {jobs.length > 0 && (
-        <div className="mt-4 rounded-xl border border-line p-4 text-sm">
+        <div className="mt-4 rounded-[3px] border border-line p-4 text-sm">
           <div className="flex items-center justify-between gap-4">
             <p>
               {running ? "Import en cours…" : "Import terminé"} — {done}/{jobs.length}

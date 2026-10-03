@@ -25,437 +25,265 @@
     ],
     "all": null
   },
-  "coverId": "tra003",
+  "coverId": "tra001",
   "photos": [
     {
       "id": "tra001",
       "filename": "LV_0001.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T05:30:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T05:30:00Z",
       "bibs": [
-        "202"
-      ],
-      "tags": [
-        "Départ"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra001/original.jpg"
-    },
-    {
-      "id": "tra002",
-      "filename": "LV_0002.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T05:36:00.000Z",
-      "bibs": [
+        "115",
         "27"
       ],
       "tags": [
         "Départ"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra002/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1504025468847-0e438279542c?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra002",
+      "filename": "LV_0002.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T05:36:00Z",
+      "bibs": [
+        "115"
+      ],
+      "tags": [
+        "Départ"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1530143311094-34d807799e8f?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "tra003",
       "filename": "LV_0003.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T05:42:00.000Z",
-      "bibs": [
-        "333"
-      ],
-      "tags": [
-        "Départ"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra003/original.jpg"
-    },
-    {
-      "id": "tra004",
-      "filename": "LV_0004.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T05:48:00.000Z",
-      "bibs": [
-        "248"
-      ],
-      "tags": [
-        "Départ"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra004/original.jpg"
-    },
-    {
-      "id": "tra005",
-      "filename": "LV_0005.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T05:54:00.000Z",
-      "bibs": [
-        "333"
-      ],
-      "tags": [
-        "Départ"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra005/original.jpg"
-    },
-    {
-      "id": "tra006",
-      "filename": "LV_0006.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:00:00.000Z",
+      "width": 1600,
+      "height": 2400,
+      "takenAt": "2026-09-13T05:42:00Z",
       "bibs": [
         "202"
       ],
       "tags": [
         "Départ"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra006/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1539182972012-585804f77548?auto=format&fit=crop&w=1600&h=2400&q=85"
     },
     {
-      "id": "tra007",
-      "filename": "LV_0007.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:06:00.000Z",
+      "id": "tra004",
+      "filename": "LV_0004.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T05:48:00Z",
       "bibs": [
-        "248"
-      ],
-      "tags": [
-        "Départ"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra007/original.jpg"
-    },
-    {
-      "id": "tra008",
-      "filename": "LV_0008.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:12:00.000Z",
-      "bibs": [
-        "101",
+        "202",
         "48"
       ],
       "tags": [
         "Départ"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra008/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra005",
+      "filename": "LV_0005.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T05:54:00Z",
+      "bibs": [
+        "248"
+      ],
+      "tags": [
+        "Départ"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra006",
+      "filename": "LV_0006.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:00:00Z",
+      "bibs": [
+        "101"
+      ],
+      "tags": [
+        "Km 9 — Col de l'Arc"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra007",
+      "filename": "LV_0007.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:06:00Z",
+      "bibs": [
+        "333",
+        "48"
+      ],
+      "tags": [
+        "Km 9 — Col de l'Arc"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1504025468847-0e438279542c?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra008",
+      "filename": "LV_0008.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:12:00Z",
+      "bibs": [
+        "412"
+      ],
+      "tags": [
+        "Km 9 — Col de l'Arc"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1530143311094-34d807799e8f?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
       "id": "tra009",
       "filename": "LV_0009.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:18:00.000Z",
+      "width": 1600,
+      "height": 2400,
+      "takenAt": "2026-09-13T06:18:00Z",
       "bibs": [
         "27"
       ],
       "tags": [
         "Km 9 — Col de l'Arc"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra009/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1539182972012-585804f77548?auto=format&fit=crop&w=1600&h=2400&q=85"
     },
     {
       "id": "tra010",
       "filename": "LV_0010.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:24:00.000Z",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:24:00Z",
       "bibs": [
-        "251",
-        "12"
-      ],
-      "tags": [
-        "Km 9 — Col de l'Arc"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra010/original.jpg"
-    },
-    {
-      "id": "tra011",
-      "filename": "LV_0011.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:30:00.000Z",
-      "bibs": [
-        "12",
-        "412"
-      ],
-      "tags": [
-        "Km 9 — Col de l'Arc"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra011/original.jpg"
-    },
-    {
-      "id": "tra012",
-      "filename": "LV_0012.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:36:00.000Z",
-      "bibs": [
-        "202"
-      ],
-      "tags": [
-        "Km 9 — Col de l'Arc"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra012/original.jpg"
-    },
-    {
-      "id": "tra013",
-      "filename": "LV_0013.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:42:00.000Z",
-      "bibs": [
-        "251",
-        "412"
-      ],
-      "tags": [
-        "Km 9 — Col de l'Arc"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra013/original.jpg"
-    },
-    {
-      "id": "tra014",
-      "filename": "LV_0014.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:48:00.000Z",
-      "bibs": [
-        "27"
-      ],
-      "tags": [
-        "Km 9 — Col de l'Arc"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra014/original.jpg"
-    },
-    {
-      "id": "tra015",
-      "filename": "LV_0015.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T06:54:00.000Z",
-      "bibs": [
-        "115"
-      ],
-      "tags": [
-        "Km 9 — Col de l'Arc"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra015/original.jpg"
-    },
-    {
-      "id": "tra016",
-      "filename": "LV_0016.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:00:00.000Z",
-      "bibs": [
-        "251",
-        "307"
-      ],
-      "tags": [
-        "Km 9 — Col de l'Arc"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra016/original.jpg"
-    },
-    {
-      "id": "tra017",
-      "filename": "LV_0017.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:06:00.000Z",
-      "bibs": [
-        "27"
+        "115",
+        "248"
       ],
       "tags": [
         "Km 18 — Crête"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra017/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
-      "id": "tra018",
-      "filename": "LV_0018.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:12:00.000Z",
+      "id": "tra011",
+      "filename": "LV_0011.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:30:00Z",
+      "bibs": [
+        "202"
+      ],
+      "tags": [
+        "Km 18 — Crête"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra012",
+      "filename": "LV_0012.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:36:00Z",
+      "bibs": [
+        "48"
+      ],
+      "tags": [
+        "Km 18 — Crête"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra013",
+      "filename": "LV_0013.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:42:00Z",
+      "bibs": [
+        "101",
+        "248"
+      ],
+      "tags": [
+        "Km 18 — Crête"
+      ],
+      "originalKey": "https://images.unsplash.com/photo-1504025468847-0e438279542c?auto=format&fit=crop&w=2400&h=1600&q=85"
+    },
+    {
+      "id": "tra014",
+      "filename": "LV_0014.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T06:48:00Z",
       "bibs": [
         "101"
       ],
       "tags": [
         "Km 18 — Crête"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra018/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1530143311094-34d807799e8f?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
-      "id": "tra019",
-      "filename": "LV_0019.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:18:00.000Z",
+      "id": "tra015",
+      "filename": "LV_0015.jpg",
+      "width": 1600,
+      "height": 2400,
+      "takenAt": "2026-09-13T06:54:00Z",
       "bibs": [
-        "115"
-      ],
-      "tags": [
-        "Km 18 — Crête"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra019/original.jpg"
-    },
-    {
-      "id": "tra020",
-      "filename": "LV_0020.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:24:00.000Z",
-      "bibs": [
-        "12"
-      ],
-      "tags": [
-        "Km 18 — Crête"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra020/original.jpg"
-    },
-    {
-      "id": "tra021",
-      "filename": "LV_0021.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:30:00.000Z",
-      "bibs": [
-        "27"
-      ],
-      "tags": [
-        "Km 18 — Crête"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra021/original.jpg"
-    },
-    {
-      "id": "tra022",
-      "filename": "LV_0022.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:36:00.000Z",
-      "bibs": [
-        "202",
-        "412"
-      ],
-      "tags": [
-        "Km 18 — Crête"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra022/original.jpg"
-    },
-    {
-      "id": "tra023",
-      "filename": "LV_0023.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:42:00.000Z",
-      "bibs": [
-        "134"
-      ],
-      "tags": [
-        "Km 18 — Crête"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra023/original.jpg"
-    },
-    {
-      "id": "tra024",
-      "filename": "LV_0024.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:48:00.000Z",
-      "bibs": [
-        "412",
         "333"
       ],
       "tags": [
-        "Km 18 — Crête"
+        "Arrivée"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra024/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1539182972012-585804f77548?auto=format&fit=crop&w=1600&h=2400&q=85"
     },
     {
-      "id": "tra025",
-      "filename": "LV_0025.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T07:54:00.000Z",
+      "id": "tra016",
+      "filename": "LV_0016.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T07:00:00Z",
       "bibs": [
-        "101",
-        "115"
+        "333",
+        "412"
       ],
       "tags": [
         "Arrivée"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra025/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
-      "id": "tra026",
-      "filename": "LV_0026.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T08:00:00.000Z",
-      "bibs": [
-        "27",
-        "307"
-      ],
-      "tags": [
-        "Arrivée"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra026/original.jpg"
-    },
-    {
-      "id": "tra027",
-      "filename": "LV_0027.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T08:06:00.000Z",
+      "id": "tra017",
+      "filename": "LV_0017.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T07:06:00Z",
       "bibs": [
         "27"
       ],
       "tags": [
         "Arrivée"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra027/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&h=1600&q=85"
     },
     {
-      "id": "tra028",
-      "filename": "LV_0028.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T08:12:00.000Z",
-      "bibs": [
-        "307",
-        "115"
-      ],
-      "tags": [
-        "Arrivée"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra028/original.jpg"
-    },
-    {
-      "id": "tra029",
-      "filename": "LV_0029.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T08:18:00.000Z",
-      "bibs": [
-        "202"
-      ],
-      "tags": [
-        "Arrivée"
-      ],
-      "originalKey": "photos/trail-des-cretes-2026/tra029/original.jpg"
-    },
-    {
-      "id": "tra030",
-      "filename": "LV_0030.jpg",
-      "width": 1800,
-      "height": 1200,
-      "takenAt": "2026-09-13T08:24:00.000Z",
+      "id": "tra018",
+      "filename": "LV_0018.jpg",
+      "width": 2400,
+      "height": 1600,
+      "takenAt": "2026-09-13T07:12:00Z",
       "bibs": [
         "115"
       ],
       "tags": [
         "Arrivée"
       ],
-      "originalKey": "photos/trail-des-cretes-2026/tra030/original.jpg"
+      "originalKey": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=2400&h=1600&q=85"
     }
   ],
   "createdAt": "2026-09-20T10:00:00.000Z",

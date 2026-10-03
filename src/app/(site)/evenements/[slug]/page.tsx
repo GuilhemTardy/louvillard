@@ -88,7 +88,7 @@ export default async function EventPage({ params }: PageProps<"/evenements/[slug
         {event.description && <p className="text-sm leading-relaxed text-muted lg:text-right">{event.description}</p>}
       </div>
       {event.demo && (
-        <p className="mt-6 rounded-xl border border-accent/40 bg-accent/10 px-4 py-3 text-sm text-accent">
+        <p className="mt-6 rounded-[3px] border border-accent/40 bg-accent/10 px-4 py-3 text-sm text-accent">
           Galerie de démonstration — les paiements sont simulés. {event.search === "bib" ? "Essayez les dossards 27, 115 ou 202." : ""}
         </p>
       )}

@@ -1,71 +1,94 @@
 "use client";
 
-import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import type { PortfolioItem } from "@/content/portfolio";
+import { srcOf } from "@/content/images";
+import type { Series } from "@/content/portfolio";
 import { CATEGORY_LABELS } from "@/lib/types";
 import { Lightbox } from "./lightbox";
+import { Photo } from "./photo";
+import { FadeUp } from "./reveal";
 
-export function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
+export function PortfolioGrid({ series }: { series: Series[] }) {
   const router = useRouter();
   const params = useSearchParams();
   const active = params.get("categorie");
-  const [open, setOpen] = useState<number | null>(null);
+  const [open, setOpen] = useState<{ s: number; i: number } | null>(null);
 
-  const categories = useMemo(() => [...new Set(items.map((i) => i.category))], [items]);
-  const visible = active ? items.filter((i) => i.category === active) : items;
-
-  function select(cat: string | null) {
-    const url = cat ? `/portfolio?categorie=${cat}` : "/portfolio";
-    router.replace(url, { scroll: false });
-  }
+  const categories = useMemo(() => [...new Set(series.map((s) => s.category))], [series]);
+  const visible = active ? series.filter((s) => s.category === active) : series;
+  const current = open ? visible[open.s] : null;
 
   return (
     <>
       <div className="flex flex-wrap gap-2" role="group" aria-label="Filtrer par catégorie">
-        <button type="button" className="chip" aria-pressed={!active} onClick={() => select(null)}>
+        <button type="button" className="chip" aria-pressed={!active} onClick={() => router.replace("/portfolio", { scroll: false })}>
           Tout
         </button>
         {categories.map((cat) => (
-          <button key={cat} type="button" className="chip" aria-pressed={active === cat} onClick={() => select(cat)}>
+          <button
+            key={cat}
+            type="button"
+            className="chip"
+            aria-pressed={active === cat}
+            onClick={() => router.replace(`/portfolio?categorie=${cat}`, { scroll: false })}
+          >
             {CATEGORY_LABELS[cat]}
           </button>
         ))}
       </div>
 
-      <div className="protect mt-10 columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
-        {visible.map((item, i) => (
-          <button
-            key={item.src}
-            type="button"
-            onClick={() => setOpen(i)}
-            onContextMenu={(e) => e.preventDefault()}
-            className="group relative block w-full break-inside-avoid overflow-hidden rounded-xl bg-soft"
-            aria-label={`Agrandir : ${item.alt}`}
-          >
-            <Image
-              src={item.src}
-              alt={item.alt}
-              width={item.width}
-              height={item.height}
-              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-              className="h-auto w-full transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-              draggable={false}
-            />
-            <span className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-black/75 to-transparent p-4 text-left text-sm opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-              {item.alt}
-            </span>
-          </button>
+      <div className="mt-16 space-y-28">
+        {visible.map((s, si) => (
+          <article key={s.slug} className="protect" onContextMenu={(e) => e.preventDefault()}>
+            <FadeUp className="grid gap-6 border-t border-fg/15 pt-6 md:grid-cols-12">
+              <p className="mono text-muted md:col-span-3">
+                {String(si + 1).padStart(2, "0")} — {CATEGORY_LABELS[s.category]}
+              </p>
+              <h2 className="display text-[clamp(2.6rem,6vw,5.5rem)] md:col-span-6">{s.title}</h2>
+              <div className="md:col-span-3">
+                <p className="mono text-muted">
+                  {s.place} · {s.year}
+                </p>
+                <p className="mt-3 text-[15px] leading-relaxed text-muted">{s.text}</p>
+              </div>
+            </FadeUp>
+            <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-12 md:gap-4">
+              {s.images.map((img, i) => {
+                const span =
+                  i % 4 === 0 ? "col-span-2 md:col-span-7 aspect-[4/3]" : i % 4 === 1 ? "md:col-span-5 aspect-[4/5]" : i % 4 === 2 ? "md:col-span-5 aspect-[4/5]" : "col-span-2 md:col-span-7 aspect-[4/3]";
+                return (
+                  <FadeUp key={`${img.id}-${i}`} delay={(i % 2) * 0.08} className={span}>
+                    <button
+                      type="button"
+                      onClick={() => setOpen({ s: si, i })}
+                      className="group block h-full w-full overflow-hidden rounded-[2px]"
+                      aria-label={`Agrandir : ${img.alt}`}
+                    >
+                      <Photo
+                        image={img}
+                        className="h-full w-full"
+                        imgClassName="transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                        sizes="(min-width: 768px) 60vw, 100vw"
+                        w={1400}
+                      />
+                    </button>
+                  </FadeUp>
+                );
+              })}
+            </div>
+          </article>
         ))}
       </div>
 
-      <Lightbox
-        items={visible.map((v) => ({ src: v.src, alt: v.alt, width: v.width, height: v.height }))}
-        index={open}
-        onIndexChange={setOpen}
-        caption={(i) => visible[i]?.alt}
-      />
+      {current && open && (
+        <Lightbox
+          items={current.images.map((img) => ({ src: srcOf(img, 2000), alt: img.alt, width: 3, height: 2 }))}
+          index={open.i}
+          onIndexChange={(i) => setOpen(i === null ? null : { s: open.s, i })}
+          caption={(i) => `${current.title} — ${current.images[i]?.alt ?? ""}`}
+        />
+      )}
     </>
   );
 }
